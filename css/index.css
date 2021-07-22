@@ -62,3 +62,8 @@ p {
 	top: 40vh;
 	left: center;
 }
+
+.score {
+	font-weight: bold;
+	color: white;
+}

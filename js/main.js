@@ -6,6 +6,7 @@ main.fillStyle = "rgba(255, 0, 0, 0.6)";
 bg.lineWidth = 5;
 
 const square_img = document.getElementById("square");
+const incrementScoreBy = 10
 
 var playfield = new Array(22), dirty_rows = new Array(20), dirty = false, t = 0;
 
@@ -40,6 +41,9 @@ const check_clear = function(max){ // todo: check and clear up to max
 			playfield[row][9] > 0){
 			playfield.splice(row, 1);
 			playfield.splice(0, 0, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+			let score = parseInt(document.getElementById('scoreCount').innerHTML);
+			score += incrementScoreBy;
+			document.getElementById('scoreCount').innerHTML = score
 			for (var i = 0; i <= row; ++i){
 				if (i > 1 && !dirty_rows[i-2]){
 					dirty_rows[i-2] = true;

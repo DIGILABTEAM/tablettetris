@@ -1,5 +1,5 @@
 # webcanvas_tetris
-Simple HTML5-Canvas/JavaScript Tetris game implementation. [Demo](https://Btsan.github.io/webcanvas_tetris/) complete with background effect.
+Simple HTML5-Canvas/JavaScript Tetris game implementation. [Demo](https://digilabteam.github.io/tablettetris//) complete with background effect.
 
 ---
 
